@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3">
+            <View
+                android:layout_width="1dp"
+                android:layout_centerInParent="true"
+                android:layout_height="fill_parent"
+                android:background="#000000" />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/empty_circle"/>
+            <View
+                android:id="@+id/mActualStatus"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/fill_circle"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mTvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Llegada al destino"
+                android:textSize="18sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/mTvHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="3:35pm"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/mTvDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Llegada al destino"
+                android:textSize="12sp"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+
+            <ImageView
+                android:contentDescription="Estado del autobus"
+                android:id="@+id/mImageState"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:layout_margin="20dp"
+                android:layout_weight=".4"
+                android:src="@mipmap/nohayviajes" />
+    </LinearLayout>
+</LinearLayout>
